@@ -1,0 +1,28 @@
+<div ng-controller="MainCtrl">
+  <div class="row">
+    <div class="col-xs-6 col-xs-offset-3 text-center">
+      <h1 class="titleQuestion">How many people use the Internet at your home?</h1>
+      <div class="question">?</div>
+    </div>
+  </div>
+  <div class="row text-center">
+    <div id="first" ng-click="removeDevice" class="incrementBox col-xs-1 col-xs-offset-4">
+      <div class="increment minus">-</div>
+    </div>
+    <div class="col-xs-1">
+      <p class="count">{{devices}}</p>
+    </div>
+    <div class="incrementBox col-xs-1">
+      <div ng-click="addDevice()" class="increment plus">+</div>
+    </div>
+    <div class="text-center">
+        <a class="proceed" ui-sref="survey2"></a>
+    </div>
+  </div>
+  <footer>
+    <div class="pull-right text-center">
+      <p class="red totalMb">{{Mbps}}</p>
+      <p class="totalText">Mbps</p>
+    </div>
+  </footer>
+</div>

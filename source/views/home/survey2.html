@@ -1,0 +1,24 @@
+<div ng-controller="MainCtrl">
+  <div class="row">
+    <div class="col-xs-6 col-xs-offset-3 text-center">
+      <h1 class="titleQuestion">How often do you use social media?</h1>
+      <p class="blurbTwo">Facebook, Twitter, Pinterest, etc.</p>
+    </div>
+  </div>
+  <div class="row text-center">
+      <div ng-click="howOftenMedia(0)" id="firstBlock" class="select col-xs-4"><span ng-class="{highlight: survey2===0}">Never/Rarely</span></div>
+      <div ng-click="howOftenMedia(1)" class="select col-xs-4"><span ng-class="{highlight: survey2===1}">Sometimes</span></div>
+      <div ng-click="howOftenMedia(2)" class="select col-xs-4"><span ng-class="{highlight: survey2===2}">All the time</span></div>
+  </div>
+  <div class="row text-center">
+    <a ui-sref="survey1" class="back">
+      << go back</a>
+    <a class="proceed" href="#"></a>
+  </div>
+  <footer>
+    <div class="pull-right text-center">
+      <p class="red totalMb">{{Mbps}}</p>
+      <p class="totalText">Mbps</p>
+    </div>
+  </footer>
+</div>

@@ -1,0 +1,25 @@
+<div ng-controller="MainCtrl">
+  <div class="row">
+    <div class="col-xs-6 col-xs-offset-3 text-center">
+      <h1 class="titleQuestion">How often does your family stream audio?</h1>
+      <p class="blurbTwo">Spotify, Pandora, etc.</p>
+    </div>
+  </div>
+  <div class="row text-center">
+    <div class="col-xs-10 col-xs-offset-1">
+      <div ng-click="howOftenStreaming(0)" id="firstBlock" class="select col-xs-3"><span ng-class="{highlight: survey3 === 0}">Never/Rarely</span></div>
+      <div ng-click="howOftenStreaming(1)" class="select col-xs-3"><span ng-class="{highlight: survey3===1}">Sometimes</span></div>
+      <div ng-click="howOftenStreaming(2)" class="select col-xs-3"><span ng-class="{highlight: survey3===2}">All the time</span></div>
+    </div>
+  </div>
+  <div class="row text-center">
+    <a ui-sref="survey2" class="back">
+      << go back</a>
+  </div>
+  <footer>
+    <div class="pull-right text-center">
+      <p class="red totalMb">{{Mbps}}</p>
+      <p class="totalText">Mbps</p>
+    </div>
+  </footer>
+</div>
